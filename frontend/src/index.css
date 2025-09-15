@@ -1,0 +1,14 @@
+/* This line imports the Google Font we linked in the index.html */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+/* These three lines are special Tailwind directives. */
+/* They pull in all the pre-written CSS utility classes for us to use. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* We can also add some global styles here if we want. */
+body {
+  /* This sets a smooth background color transition for light/dark mode */
+  @apply bg-gray-100 dark:bg-gray-900 transition-colors duration-300;
+}
